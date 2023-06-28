@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: maroon;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    position: sticky;
+}
+header h1{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 50px;
+
+}
+content{
+    display: flex;
+    height: 550px;
+    width: 100%;
+}
+.left table{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+td{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.left{
+    width: 40%;
+    border-right: 1px solid gray;
+    height: 550px;
+    position: sticky;
+}
+.ip{
+    width: 250px;
+}
+button{
+    width: 150px;
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 40px;
+    color: maroon;
+    background-color: transparent;
+    font-size: 20px;
+    border: 1px solid maroon;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: maroon;
+}
+#btn{
+    width: 150px;
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 40px;
+    color: maroon;
+    background-color: transparent;
+    font-size: 20px;
+    border: 1px solid maroon;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#btn:hover{
+    color: white;
+    background-color: maroon;
+
+}
+
+.right{
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    width: 60%;
+    max-height: 500px;
+    position: sticky;
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+.right table{
+    width: 100%;
+}
+
+.right th{
+    background-color: maroon;
+    color: white;
+    width: 150px;
+    height: 40px;
+
+}
+
+.right td{
+    font-size: 15px;
+    width: 150px;
+}
+
+footer{
+    background-color: maroon;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+    color: white;
+}

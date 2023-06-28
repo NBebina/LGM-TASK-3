@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="task3.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form</h1>
+    </header>
+    <content>
+        <div class="left">
+            <form>
+                <table>
+                    <tr>
+                        <td>Regd. No.</td>
+                        <td>:</td>
+                        <td><input type="text" class="ip" id="regd" name="regd"></td>
+                    </tr>
+                    <tr>
+                        <td>First Name</td>
+                        <td>:</td>
+                        <td><input type="text" class="ip" id="fname" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td>:</td>
+                        <td><input type="text" class="ip" id="lname"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>:</td>
+                        <td>
+                            <select id="gender">
+                                <option value=" "> </option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option> 
+                            
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="Email" class="ip" id="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone No.</td>
+                        <td>:</td>
+                        <td><input type="number" class="ip" id="phone" name="phone"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>:</td>
+                        <td><textarea class="ip" id="address" name="address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Branch</td>
+                        <td>:</td>
+                        <td>
+                            <select id="branch">
+                                <option value=" "> </option>
+                                <option value="CSE">CSE</option>
+                                <option value="CIVIL">CIVIL</option>
+                                <option value="ELE">ELE</option>
+                                <option value="MME">MME</option>
+                                <option value="MECH">MECH</option>
+                                <option value="ETC">ETC</option>
+                                <option value="MINING">MINING</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <input type="button" name="button" id="btn" onclick="addRow()" value="submit" >
+                <button type="Reset">Reset</button>
+            </form>
+        </div>
+        <div class="right">
+            <table id="show" border="2">
+                <thead>
+                    <tr>
+                        <th>Regd. No.</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                        <th>Phone No.</th>
+                        <th>Address</th>
+                        <th>Branch</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </content>
+    <footer>
+        &#169 Bebina Nayak - 2023
+    </footer>
+    <script type="text/javascript">
+        var l1 = [];
+        var l2 = [];
+        var l3 = [];
+        var l4 = [];
+        var l5 = [];
+        var l6 = [];
+        var l7 = [];
+        var l8 = [];
+        
+        var n=1;
+        var m=0;
+
+        function addRow()
+        {
+            var addrw=document.getElementById('show')
+            var nrow = addrw.insertRow(n);
+            l1[m]=document.getElementById("regd").value;
+            l2[m]=document.getElementById("fname").value;
+            l3[m]=document.getElementById("lname").value;
+            l4[m]=document.getElementById("gender").value;
+            l5[m]=document.getElementById("email").value;
+            l6[m]=document.getElementById("phone").value;
+            l7[m]=document.getElementById("address").value;
+            l8[m]=document.getElementById("branch").value;
+            var cel1 = nrow.insertCell(0);
+            var cel2 = nrow.insertCell(1);
+            var cel3 = nrow.insertCell(2);
+            var cel4 = nrow.insertCell(3);
+            var cel5 = nrow.insertCell(4);
+            var cel6 = nrow.insertCell(5);
+            var cel7 = nrow.insertCell(6);
+            var cel8 = nrow.insertCell(7);
+
+            cel1.innerHTML = l1[m];
+            cel2.innerHTML = l2[m];
+            cel3.innerHTML = l3[m];
+            cel4.innerHTML = l4[m];
+            cel5.innerHTML = l5[m];
+            cel6.innerHTML = l6[m];
+            cel7.innerHTML = l7[m];
+            cel8.innerHTML = l8[m];
+
+            n++;
+            m++;
+
+
+
+        }
+    </script>
+</body>
+</html>
